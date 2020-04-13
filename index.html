@@ -32,21 +32,24 @@
       <div class="row">
         <div class="col-md-3">
           <!--Search bar and history--> 
-      <div class="card" style="width: 26rem;">
+      <div class="card" style="width: 25rem;">
         <div class="card-header">
           <form id="search-form">
             <label for="search-input">Search for a City:</label>
             <input type="text" id="search-input">
-            <!-- Search Button-->
-            <input id="weather-search" type="submit" value="Search">
           </form>
+          <!-- Search Button-->
+          <div>
+            <button type="submit" class="btn btn-primary" id="weather-search">Search</button>
+          </div>
+
         </div>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item">Cras justo odio</li>
-          <li class="list-group-item">Dapibus ac facilisis in</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-          <li class="list-group-item">Vestibulum at eros</li>
-          <li class="list-group-item">Vestibulum at eros</li>
+          <li class="list-group-item">History</li>
+          <li class="list-group-item">History</li>
+          <li class="list-group-item">History</li>
+          <li class="list-group-item">History</li>
+          <li class="list-group-item">History</li>
         </ul>
       </div>
         </div>
@@ -54,11 +57,12 @@
         <div class="col-md-9">
           <div class="card" style="width: 85rem;">
             <div class="card-body">
+              <h5 class="error"></h5>
               <h3 class="card-title" id="city"></h3>
               <h4 class="card-title" id="date"></h4>
               <p class="card-text" id="temp"></p>
               <p class="card-text" id="humidity"></p>
-              <p class="card-text">Wind Speed:</p>
+              <p class="card-text" id="windSpeed"></p>
               <p class="card-text">UV Index:</p>
             </div>
           </div>
@@ -66,13 +70,13 @@
       </div>
    
 
-    
+    <!--Five Day Forecast-->
       <div class="row"> 
         <div class="col-md-12">
         <div class="card-deck">
           <div class="card">    
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Date</h5>
               <p class="card-text">Temperature</p>
               <p class="card-text">Humidity</p>
            
@@ -80,7 +84,7 @@
           </div>
           <div class="card">     
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Date</h5>
               <p class="card-text">Temperature</p>
               <p class="card-text">Humidity</p>
             
@@ -88,7 +92,7 @@
           </div>
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Date</h5>
               <p class="card-text">Temperature</p>
               <p class="card-text">Humidity</p>
               
@@ -96,7 +100,7 @@
           </div>
           <div class="card">  
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Date</h5>
               <p class="card-text">Temperature</p>
               <p class="card-text">Humidity</p>
               
@@ -104,7 +108,7 @@
           </div>
           <div class="card"> 
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
+              <h5 class="card-title">Date</h5>
               <p class="card-text">Temperature</p>
               <p class="card-text">Humidity</p>
 
