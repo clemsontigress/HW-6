@@ -16,7 +16,7 @@ $(document).ready(function() {
     else {$("#error").html('Field cannot be blank')}        
 });
     
-
+var historyArr = []
 
   function getCoord() {
     var citySearch = $('#search-input').val().trim();
@@ -144,19 +144,19 @@ $(document).ready(function() {
 
 function addHistory() {
 
-  var historyArr = []
 
   var citySearch = $('#search-input').val().trim();
   //var searchedCities = JSON.stringify(citySearch);
-  localStorage.setItem('City', citySearch);
+  localStorage.setItem('City', historyArr);
   
-  historyArr.push(citySearch);
+  historyArr.unshift(citySearch);
   console.log(historyArr)
   localData = localStorage.getItem('City')
   
-  
+  console.log(typeof(localData))
   var history = $("<p>").text(localData)
-  historyDiv.append(history)
+  console.log(history)
+  historyDiv.append(history[0])
 
 }
 
